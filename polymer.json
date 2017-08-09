@@ -5,6 +5,7 @@
     "src/my-home.html",
     "src/my-projects.html",
     "src/my-resume.html",
+    "src/my-blog.html",
     "src/my-view404.html"
   ],
   "sources": [

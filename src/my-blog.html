@@ -1,0 +1,30 @@
+<!-- Load the Polymer.Element base class -->
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-blog">
+  <!-- Element style and local DOM -->
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 16px;
+      }
+    </style>
+
+    <div class="card">
+      <h1 class="circle">Blog</h1>
+      <p>Maybe I'll put a blog here?</p>
+      <p>Not 100% sure</p>
+    </div>
+  </template>
+  <script>
+    // Extend the Polymer.Element base class
+    class MyBlog extends Polymer.Element {
+      static get is() { return 'my-blog'; }
+    }
+    // Register custom Element
+    window.customElements.define(MyBlog.is, MyBlog);
+  </script>
+</dom-module>
